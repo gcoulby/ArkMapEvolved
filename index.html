@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arc Survival Interactive Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<canvas id="map" width="700px" height="700px"></canvas>
+<div id="overlay">
+    <div id="overlayInner">
+        <div id="gridPositions"></div>
+    </div>
+</div>
+<span id="coordinates"></span>
+
+
+<!--Controls Panel-->
+
+<div id="controls">
+
+    <input name="server_name" placeholder="Server Name" id="server_name" />
+    <span style="font-size: 2em; font-weight: bold; text-align: center;">:</span>
+    <input name="server_ip" placeholder="IP Address" id="server_ip" />
+
+    <label for="filter">Filter Locations By: </label>
+    <select id="filter" name="filter">
+        <option value="all">All Types</option>
+        <option value="Underwater Cave">Underwater Caves</option>
+        <option value="Cave">Caves</option>
+        <option value="Tribe">Tribes</option>
+        <option value="Enemy Tribe">Enemy Tribes</option>
+        <option value="Point of Interest">Points of Interest</option>
+    </select>
+
+    <div id="table_container">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Lat<br/>Y</th>
+                <th>Lon<br/>X</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="legend">
+        <div class="legColor ucCol"></div>
+        <p>Underwater Cave</p><br/>
+
+        <div class="legColor cCol"></div>
+        <p>Cave</p><br/>
+
+        <div class="legColor tCol"></div>
+        <p>Tribe</p><br/>
+
+        <div class="legColor etCol"></div>
+        <p>Enemy Tribe</p><br/>
+
+        <div class="legColor poiCol"></div>
+        <p>Point of Interest</p><br/>
+
+    </div>
+
+    <div id="addForm">
+        <h2>Add New Location</h2>
+
+        <div class="column">
+            <label for="type">Type:&nbsp;&nbsp;</label><br/>
+            <label for="name">Name:&nbsp;&nbsp;&nbsp;</label><br/>
+            <label for="name">Lat (Y):&nbsp;</label><br/>
+        </div>
+
+        <div class="column">
+            <select id="type" name="type">
+                <option>Type...</option>
+                <option value="Underwater Cave">Underwater Cave</option>
+                <option value="Cave">Cave</option>
+                <option value="Tribe">Tribe</option>
+                <option value="Enemy Tribe">Enemy Tribe</option>
+                <option value="Point of Interest">Point of Interest</option>
+            </select><br/>
+
+            <input id="name" type="text" name="name"/><br/>
+            <input id="y" type="text" name="y" size="2"/>
+
+            <label style="margin-left:22px" for="name">Lon (X): </label><input id="x" type="text" name="x" size="2"/>
+
+            <input class="button" type="submit" name="addTo" id="addTo" value="Add to Database"/>
+        </div>
+
+        <br/>
+
+    </div>
+    <div id="fileMenu">
+        <div class="fileManagement">
+            <a id="newMap" class="button">New Map</a>
+        </div>
+        <div class="fileManagement">
+            <a id="loadTemplate" class="button">Load Template</a>
+        </div>
+        <div class="fileManagement">
+            <form id="fileForm">
+                <input type="file" class="button" id="files" name="file"/>
+                <a id="loadMap" class="button">Load Map</a>
+                <!-- fake file upload button which can be used for styling ;) -->
+                <span id="fileName"></span>
+            </form>
+        </div>
+
+        <div class="fileManagement">
+            <a id="saveMap" class="button">Save Map</a>
+        </div>
+    </div>
+
+</div>
+<script src="main.js"></script>
+
+<div id="saveConfirm">
+    <div id="saveConfirmOverlay"></div>
+        <div id="saveConfirmBox">
+            <div id="saveBoxContent">
+                <p>Would you like to save your current work first?</p>
+                <br />
+                <a id="saveConfirmYes" class="button" >Yes</a>
+                <a id="saveConfirmNo" class="button" >No</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>

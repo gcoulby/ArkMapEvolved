@@ -1,0 +1,134 @@
+<data>
+    <server>
+       <name>Cave Locations</name>
+       <ip></ip>
+    </server>
+    <locations>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>89.7</x>
+          <y>8.3</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>91.5</x>
+          <y>36.3</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>91.9</x>
+          <y>52.7</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>89.7</x>
+          <y>87.4</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>71.3</x>
+          <y>90.3</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>36.8</x>
+          <y>89.8</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>14.0</x>
+          <y>90.8</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>9.9</x>
+          <y>83.0</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>11.2</x>
+          <y>50.5</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>10.1</x>
+          <y>16.0</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>21.5</x>
+          <y>10.0</y>
+       </location>
+       <location>
+          <type>Underwater Cave</type>
+          <name></name>
+          <x>39.5</x>
+          <y>10.4</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>North East</name>
+          <x>85.4</x>
+          <y>14.7</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>South East</name>
+          <x>86.1</x>
+          <y>70.6</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>South 1</name>
+          <x>53.5</x>
+          <y>80.2</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>South 2</name>
+          <x>56.1</x>
+          <y>68.3</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>Central</name>
+          <x>46.9</x>
+          <y>41.5</y>
+       </location>
+       <location>
+          <type>Cave</type>
+          <name>North West</name>
+          <x>19.0</x>
+          <y>19.1</y>
+       </location>
+       <location>
+          <type>Point of Interest</type>
+          <name>North West Obelisk</name>
+          <x>25.0</x>
+          <y>25.0</y>
+       </location>
+       <location>
+          <type>Point of Interest</type>
+          <name>South East Obelisk</name>
+          <x>72.2</x>
+          <y>58.9</y>
+       </location>
+       <location>
+          <type>Point of Interest</type>
+          <name>South West Obelisk</name>
+          <x>17.4</x>
+          <y>79.8</y>
+       </location>
+    </locations>
+</data>

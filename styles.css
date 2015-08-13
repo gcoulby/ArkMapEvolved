@@ -1,0 +1,402 @@
+/* CSS file placeholder. */
+body
+{
+    padding: 0;
+    margin: 0;
+    background: #313335;
+    color: ghostwhite;
+}
+
+#map_container
+{
+    position: relative;
+}
+
+#map
+{
+    width: 700px;
+    height: 700px;
+    background-image: url(assets/arc700.png);
+}
+
+#overlay
+{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#overlay:hover
+{
+    cursor: crosshair;
+}
+
+#overlayInner
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+#server_name, #server_ip
+{
+    background: none;
+    border:none;
+    outline: none;
+    color:ghostwhite;
+    font-size:2.5em;
+    font-weight: bold;
+    width:48%;
+    padding-left:0;
+    padding-right: 0;
+}
+
+#server_ip
+{
+    text-align: right;
+    float: right;
+}
+
+.number
+{
+    background: white;
+    padding: 3px;
+    border: 2px solid black;
+    position: absolute;
+    color: #000;
+}
+
+.lat
+{
+    left: 28px;
+}
+
+.lon
+{
+    bottom: 28px;
+}
+
+canvas
+{
+    border: 1px solid black;
+    position: relative;
+}
+
+canvas:hover
+{
+    cursor: crosshair;
+}
+
+#coordinates
+{
+    position: absolute;
+    color: white;
+    display: none;
+}
+
+#controls
+{
+    position: absolute;
+    top: 0;
+    left: 700px;
+    padding: 0 25px;
+    width: 530px;
+}
+
+table
+{
+    width: 100%;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 350px;
+}
+
+#table_container
+{
+    margin-top: 20px;
+    height: 330px;
+    overflow: auto;
+}
+
+td
+{
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.even
+{
+    background: #e8e8e8;
+}
+
+td, th
+{
+    border: 2px solid black;
+
+}
+
+th
+{
+    background: #2E3234;
+    color: white;
+    padding: 8px;
+}
+
+#db
+{
+    display: none;
+}
+
+.button, .deleteButton
+{
+    padding: 4px 8px;
+    background: #3b9ce0;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover
+{
+    background: #40b5ff;
+}
+
+#addForm
+{
+    width: 50%;
+    display: table-cell;
+}
+
+.column
+{
+    display: table-cell;
+}
+
+.column select
+{
+    width: 100%;
+}
+
+.column #name
+{
+    width: 93.5%;
+}
+
+label
+{
+    line-height: 2.6;
+}
+
+#addTo
+{
+    margin-left: 1px;
+    width: 98.5%;
+}
+
+#legend
+{
+    margin-top: 20px;
+    width: 60%;
+    float: left;
+    display: table-cell;
+
+}
+
+#legend p
+{
+    margin: 9px auto;
+    display: inline-block;
+
+}
+
+.legColor
+{
+    margin: 8px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    clear: both;
+    float: left;
+    display: block;
+}
+
+#legend .ucCol, tbody td.ucCol
+{
+    background: #54adff;
+}
+
+#legend .cCol, tbody td.cCol
+{
+    background: #00ff00;
+}
+
+#legend .tCol, tbody td.tCol
+{
+    background: yellow;
+}
+#legend .etCol, tbody td.etCol
+{
+    background: #ff3100;
+}
+
+#legend .poiCol, tbody td.pCol
+{
+    background: orange;
+}
+
+.location.ucCol
+{
+    color: #54adff;
+}
+
+.location.cCol
+{
+    color: #00ff00;
+}
+
+.location.tCol
+{
+    color: yellow;
+}
+.location.etCol
+{
+    color: #ff3100;
+}
+
+.location.pCol
+{
+    color: orange;
+}
+
+input, select, textarea
+{
+    margin: 2px 0;
+    font-size: 1em;
+    padding: 0.3em;
+    border: 2px solid #2E3234;
+    outline-color: #58baff !important;
+}
+
+.location
+{
+    position: absolute;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.ucLoc
+{
+    color: #54adff;
+}
+
+input[type='file']
+{
+    color: transparent;
+}
+
+#files
+{
+    display: none; /* do not display the actual file upload button */
+    color: transparent;
+}
+
+#loadMap, #newMap, #saveMap, #loadTemplate
+{
+    width: 90%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fileManagement
+{
+    width: 23%;
+    display: inline-block;
+    margin: 0.5%;
+}
+
+.fileManagement .button
+{
+    width: 90%;
+}
+
+#fileMenu
+{
+    position:fixed;
+    bottom:0;
+    right: 0;
+    width: 558px;
+    padding:10px 10px;
+    background: #212121;
+}
+
+#saveConfirm
+{
+    display: none;
+}
+
+#saveConfirmOverlay
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    background: #000000;
+    opacity: 0.8;
+}
+
+#saveConfirmBox
+{
+    position: absolute;
+    top:30%;
+    left:30%;
+    width:40%;
+    height:40%;
+    margin: auto;
+    display: block;
+    background:ghostwhite;
+    color:#212121;
+    text-align: center;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+#saveBoxContent
+{
+    position:absolute;
+    top:26%;
+    height:28%;
+    width:100%;
+}
+
+#saveConfirmYes
+{
+    padding:10px 40px;
+    background: #56d200;
+}
+
+#saveConfirmYes:hover
+{
+    background: #2dff00;
+}
+
+#saveConfirmNo
+{
+    padding:10px 40px;
+    background:red;
+}
+
+#saveConfirmNo:hover
+{
+    background: #d30000;
+}
